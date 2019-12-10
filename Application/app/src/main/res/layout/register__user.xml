@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradback_login"
+    tools:context=".Register_User">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35sp"
+                    android:fontFamily="@font/armata"
+                    android:lineSpacingExtra="8sp"
+                    android:text="SIGN UP!"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/this_app_theme"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reg_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35sp"
+                    android:fontFamily="@font/armata"
+                    android:text="Please enter the following details to Sign Up!"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#398B0C"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/txtEnterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="First Name "
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_middle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Middle Name (Optional)"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Last Name "
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txtEmailReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="E-Mail Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/txtPasswordReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:ems="10"
+                    android:fontFamily="@font/armata"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnRegisterHere"
+                    android:layout_width="210sp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/bordered_button"
+                    android:contentDescription="Register Button"
+                    android:fontFamily="@font/armata"
+                    android:paddingLeft="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="18dp"
+                    android:paddingBottom="10dp"
+                    android:text="SIGN UP"
+                    android:textAllCaps="true"
+                    android:textColor="#398B0C"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnbackreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="50sp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Description"
+                    android:fontFamily="@font/armata"
+                    android:text="Already have a Account? Sign In"
+                    android:textColor="#4E4E4E"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:fontFamily="@font/armata"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Created  by  Zainuddin Saiyed"
+                    android:textColor="#302b63"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="50sp"
+                    android:fontFamily="@font/armata"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Contact: "
+                    android:textColor="#302b63"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

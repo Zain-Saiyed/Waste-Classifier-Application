@@ -13,8 +13,10 @@ import android.graphics.Matrix;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -30,7 +32,7 @@ import java.nio.ByteOrder;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class MainActivity extends Activity
+public class MainActivity extends AppCompatActivity
 {
     private static final int CAMERA_REQUEST = 1888;
 
@@ -44,21 +46,22 @@ public class MainActivity extends Activity
     private Interpreter tflite;
     int[] intValues;
 
-
-    Button photoButton;
+    Button photoButton,submitdata;
     TextView tv_result,tx1,tx2;
     ByteBuffer imgData = null;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         this.imageView = (ImageView)this.findViewById(R.id.imageView1);
         photoButton = (Button) this.findViewById(R.id.btn_classify);
+        submitdata = this.findViewById(R.id.btn_submit);
         tv_result = this.findViewById(R.id.tv_result);
 
+        imageView.setVisibility(View.INVISIBLE);
 //        load_model();
 
         photoButton.setOnClickListener(new View.OnClickListener()
@@ -78,6 +81,13 @@ public class MainActivity extends Activity
                 }
             }
         });
+
+        submitdata.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(MainActivity.this, SubmitData.class));
+            }
+        });
     }
 
     @Override
@@ -85,11 +95,11 @@ public class MainActivity extends Activity
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == MY_CAMERA_PERMISSION_CODE) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "camera permission granted", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Camera permission granted!", Toast.LENGTH_LONG).show();
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_REQUEST);
             } else {
-                Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Camera permission denied!", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -154,6 +164,8 @@ public class MainActivity extends Activity
                 tv_result.setText("ORGANIC!");
             else
                 tv_result.setText("RECYCLEABLE!");
+
+            imageView.setVisibility(View.VISIBLE);
         }
     }
     private void convertBitmapToByteBuffer(Bitmap bitmap) {

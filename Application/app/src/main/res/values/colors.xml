@@ -2,5 +2,7 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574b</color>
-    <color name="colorAccent">#e2266a</color>
+    <color name="colorAccent">#0f9b0f</color>
+    <color name="TitleBar">#a8ff78</color>
+    <color name="this_app_theme">#5D26C1</color>
 </resources>
