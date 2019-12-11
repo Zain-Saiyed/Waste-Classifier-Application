@@ -18,11 +18,13 @@ import com.google.firebase.storage.StorageTask;
 
 public class SubmitData extends AppCompatActivity {
 
+    private static final int CAMERA_REQUEST_CODE = 101;
     Button Img_choose,Img_upload ;
     ImageView Image_View;
     StorageReference storage_ref;
     private StorageTask uploadTask;
     private Uri image_uri;
+    String image_url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +69,7 @@ public class SubmitData extends AppCompatActivity {
                 })
                 .addOnFailureListener(exception -> {
                     // Handle unsuccessful uploads
-                    Toast.makeText(SubmitData.this, "Failed to Upload!...Please Try again!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SubmitData.this, "Failed to Upload!...Please Try again!"+ exception.getMessage(), Toast.LENGTH_LONG).show();
                     // TODO
                     // please add : after specific number of button click restart activity
                 });
@@ -76,12 +78,12 @@ public class SubmitData extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent,1);
+        startActivityForResult(intent,CAMERA_REQUEST_CODE);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==1 && resultCode==RESULT_OK && data!=null && data.getData()!=null)
+        if(requestCode == CAMERA_REQUEST_CODE && resultCode == RESULT_OK && data!=null && data.getData()!=null)
         {
             image_uri = data.getData();
             Image_View.setImageURI(image_uri);

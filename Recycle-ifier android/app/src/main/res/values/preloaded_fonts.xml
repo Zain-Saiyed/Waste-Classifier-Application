@@ -2,7 +2,12 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/advent_pro_thin</item>
+        <item>@font/alex_brush</item>
         <item>@font/architects_daughter</item>
         <item>@font/atomic_age</item>
+        <item>@font/aubrey</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/cantora_one</item>
+        <item>@font/damion</item>
     </array>
 </resources>

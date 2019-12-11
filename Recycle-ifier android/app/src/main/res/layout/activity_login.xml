@@ -21,7 +21,7 @@
                 android:id="@+id/tv_Welcomeback"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35sp"
+                android:layout_marginTop="50sp"
                 android:fontFamily="@font/armata"
                 android:lineSpacingExtra="8sp"
                 android:text="Welcome back !"
@@ -144,11 +144,13 @@
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="40sp"
                 android:fontFamily="@font/armata"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="Created  by  Zainuddin Saiyed"
@@ -166,7 +168,8 @@
                 android:gravity="center_horizontal|center_vertical"
                 android:text="Contact: "
                 android:textColor="#302b63"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="invisible" />
 
         </LinearLayout>
     </ScrollView>

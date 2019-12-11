@@ -169,7 +169,8 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:text="Contact: "
                     android:textColor="#302b63"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
 
             </LinearLayout>
         </LinearLayout>
