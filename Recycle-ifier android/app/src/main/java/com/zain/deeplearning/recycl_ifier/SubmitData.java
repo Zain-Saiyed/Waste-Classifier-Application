@@ -29,7 +29,10 @@ public class SubmitData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getSupportActionBar().hide();
+////        getSupportActionBar().hide();
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setLogo(R.mipmap.app_logo_front_foreground);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_submit_data);
 
         storage_ref= FirebaseStorage.getInstance().getReference("Waste Images");

@@ -82,7 +82,7 @@
                 android:lineSpacingExtra="8sp"
                 android:text="Shared Preferences  "
                 android:textAllCaps="true"
-                android:textColor="#398B0C"
+                android:textColor="#225704"
                 android:textSize="10sp" />
 
             <Button
@@ -105,7 +105,7 @@
                 android:fontFamily="@font/armata"
                 android:text="Forgot password?"
                 android:textAllCaps="false"
-                android:textColor="#777777"
+                android:textColor="#000000"
                 android:textSize="12sp" />
 
             <LinearLayout
@@ -127,7 +127,7 @@
                     android:fontFamily="@font/armata"
                     android:gravity="center_vertical"
                     android:text="Don't have an account?"
-                    android:textColor="#777777"
+                    android:textColor="#000000"
                     android:textSize="12sp" />
 
                 <Button

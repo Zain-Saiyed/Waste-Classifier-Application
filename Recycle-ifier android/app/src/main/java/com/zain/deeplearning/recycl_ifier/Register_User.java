@@ -34,6 +34,9 @@ public class Register_User extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setLogo(R.mipmap.app_logo_front_round);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.register__user);
 
         BTNREGHere = findViewById(R.id.btnRegisterHere) ;
@@ -75,7 +78,7 @@ public class Register_User extends AppCompatActivity {
             return ;
         }
 
-        if(TextUtils.isEmpty(password) || password.length() <4 || password.length() > 10){
+        if(TextUtils.isEmpty(password) || password.length() <4 ){
             PasswordReg.setError("Enter the Password");
         }
 

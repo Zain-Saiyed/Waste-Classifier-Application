@@ -8,21 +8,21 @@ Recycle-ifier, is an android application which classifies whether the captured i
 
 1. The following Welcome screen appears for few seconds when the apps launcher icon is tapped.
 <br><br>
-<img src="https://github.com/Zain-Saiyed/Waste-Classifier-Application/blob/master/splash_screen.png">
+<img src="https://github.com/Zain-Saiyed/Waste-Classifier-Application/blob/master/Images/splash_screen.png">
 <br><br>
-<img src="https://github.com/Zain-Saiyed/Waste-Classifier-Application/blob/master/home_page.png">
+<img src="https://github.com/Zain-Saiyed/Waste-Classifier-Application/blob/master/Images/home_page.png">
 <br>
 2. If the user is new and haven't yet registered with us, then press `Don't have an account?`. Fill in the required details & tap Sign up button to get registered.
 <br>
-<img src="sign_up.png">
+<img src="Images/sign_up.png">
 <br>
 3. Enter your Log-In credentials to access app contents.
 <br><br>
-<img src="sign_in.png">
+<img src="Images/sign_in.png">
 <br>
 4. After Signing In, the Home page of app appears.
 <br>
-<img src="home_page.png">
+<img src="Images/home_page.png">
 <br>
 Here, Tap:<br>Capture Image : To capture an image and predict the class of the Image. (Organic / Recycleable)
 <br>Submit Image : To submit an image to us for further improving accuracy of predictions.
@@ -30,17 +30,17 @@ Here, Tap:<br>Capture Image : To capture an image and predict the class of the I
 <br>
 5. For Submiting data, First press "Choose" button to browse and select an Image. 
 <br>
-<img src="upload_image.png">
+<img src="Images/upload_image.png">
 <br>And, the press `UPLOAD` to upload the image.
 <br>
-<img src="due_upload.png">
+<img src="Images/due_upload.png">
 <br>A small Toast appears at the bottom after successfull upload of image.
 <br><br>
-<img src="success_upload.png">
+<img src="Images/success_upload.png">
 <br><br>
 
 ## Link to download APK: 
-Click: [Download](https://drive.google.com/file/d/1i63JgfrPoxbxmWno8YN9OeEd7LCZfdxF/view?usp=sharing)
+Click: [Download](https://drive.google.com/open?id=1rmyPLuIvagAQHsQx2Ga-yExYgheMz7kM)
 
 ## Repository Contents:
 
